@@ -3693,11 +3693,6 @@ describe('ACC Client', function () {
                 ); // upload.jsp
 
                 client._transport.mockReturnValueOnce(
-                Promise.resolve(Mock.GET_XTK_COUNTER_RESPONSE)
-                ); // GetEntityIfMoreRecentResponse - counter
-                client._transport.mockReturnValueOnce(Mock.INCREASE_VALUE_RESPONSE); // xtk:counter#IncreaseValue
-
-                client._transport.mockReturnValueOnce(
                 Mock.GET_XTK_SESSION_SCHEMA_RESPONSE
                 ); // GetEntityIfMoreRecentResponse - session
                 client._transport.mockReturnValueOnce(Mock.FILE_RES_WRITE_RESPONSE); // xtk:session#Write
@@ -3765,11 +3760,6 @@ describe('ACC Client', function () {
                 ); // upload.jsp
 
                 client._transport.mockReturnValueOnce(
-                Promise.resolve(Mock.GET_XTK_COUNTER_RESPONSE)
-                ); // GetEntityIfMoreRecentResponse - counter
-                client._transport.mockReturnValueOnce(Mock.INCREASE_VALUE_RESPONSE); // xtk:counter#IncreaseValue
-
-                client._transport.mockReturnValueOnce(
                 Mock.GET_XTK_SESSION_SCHEMA_RESPONSE
                 ); // GetEntityIfMoreRecentResponse - session
                 client._transport.mockReturnValueOnce(Mock.FILE_RES_WRITE_RESPONSE); // xtk:session#Write
@@ -3810,11 +3800,6 @@ describe('ACC Client', function () {
                 client._transport.mockReturnValueOnce(
                 Promise.reject(`Some error occurred!!!`)
                 ); // upload.jsp
-
-                client._transport.mockReturnValueOnce(
-                Promise.resolve(Mock.GET_XTK_COUNTER_RESPONSE)
-                ); // GetEntityIfMoreRecentResponse - counter
-                client._transport.mockReturnValueOnce(Mock.INCREASE_VALUE_RESPONSE);
 
                 client._transport.mockReturnValueOnce(
                 Mock.GET_XTK_SESSION_SCHEMA_RESPONSE
@@ -3863,11 +3848,6 @@ describe('ACC Client', function () {
                 client._transport.mockReturnValueOnce(
                 Promise.resolve(`Some error occurred!!!`)
                 ); // upload.jsp
-
-                client._transport.mockReturnValueOnce(
-                Promise.resolve(Mock.GET_XTK_COUNTER_RESPONSE)
-                ); // GetEntityIfMoreRecentResponse - counter
-                client._transport.mockReturnValueOnce(Mock.INCREASE_VALUE_RESPONSE);
 
                 client._transport.mockReturnValueOnce(
                 Mock.GET_XTK_SESSION_SCHEMA_RESPONSE
@@ -3924,11 +3904,6 @@ describe('ACC Client', function () {
                 ); // upload.jsp
 
                 client._transport.mockReturnValueOnce(
-                Promise.resolve(Mock.GET_XTK_COUNTER_RESPONSE)
-                ); // GetEntityIfMoreRecentResponse - counter
-                client._transport.mockReturnValueOnce(Mock.INCREASE_VALUE_RESPONSE);
-
-                client._transport.mockReturnValueOnce(
                 Mock.GET_XTK_SESSION_SCHEMA_RESPONSE
                 ); // GetEntityIfMoreRecentResponse - session
                 client._transport.mockReturnValueOnce(Mock.FILE_RES_WRITE_RESPONSE); // xtk:session#Write
@@ -3981,11 +3956,6 @@ describe('ACC Client', function () {
                 <body></body>
                 </html>`)
                 ); // upload.jsp
-
-                client._transport.mockReturnValueOnce(
-                Promise.resolve(Mock.GET_XTK_COUNTER_RESPONSE)
-                ); // GetEntityIfMoreRecentResponse - counter
-                client._transport.mockReturnValueOnce(Mock.INCREASE_VALUE_RESPONSE); // xtk:counter#IncreaseValue
 
                 client._transport.mockReturnValueOnce(
                 Mock.GET_XTK_SESSION_SCHEMA_RESPONSE
@@ -4045,11 +4015,6 @@ describe('ACC Client', function () {
                 ); // upload.jsp
 
                 client._transport.mockReturnValueOnce(
-                Promise.resolve(Mock.GET_XTK_COUNTER_RESPONSE)
-                ); // GetEntityIfMoreRecentResponse - counter
-                client._transport.mockReturnValueOnce(Mock.INCREASE_VALUE_RESPONSE); // xtk:counter#IncreaseValue
-
-                client._transport.mockReturnValueOnce(
                 Mock.GET_XTK_SESSION_SCHEMA_RESPONSE
                 ); // GetEntityIfMoreRecentResponse - session
                 client._transport.mockReturnValueOnce(Mock.FILE_RES_WRITE_RESPONSE); // xtk:session#Write
@@ -4106,13 +4071,6 @@ describe('ACC Client', function () {
                 <body></body>
                 </html>`)
               ); // upload.jsp
-
-              client._transport.mockReturnValueOnce(
-                Promise.resolve(Mock.GET_XTK_COUNTER_RESPONSE)
-              ); // GetEntityIfMoreRecentResponse - counter
-              client._transport.mockReturnValueOnce(
-                Mock.INCREASE_VALUE_RESPONSE
-              ); // xtk:counter#IncreaseValue
 
               client._transport.mockReturnValueOnce(
                 Mock.GET_XTK_SESSION_SCHEMA_RESPONSE

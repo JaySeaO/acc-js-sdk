@@ -631,12 +631,10 @@ const fileUploader = (client) => {
                                 };
                                 if (action === "publishIfNeeded") {
                                   try {
-                                    const counter =
-                                      await client.NLWS.xtkCounter.increaseValue(
-                                        { name: 'xtkResource' }
-                                      );
+                                    const UUID = crypto.randomUUID();
+
                                     const fileRes = {
-                                      internalName: 'RES' + counter,
+                                      internalName: 'WUI-' + UUID,
                                       md5: data[0].md5,
                                       label: data[0].fileName,
                                       fileName: data[0].fileName,
